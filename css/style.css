@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  background-color: #101010;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.verLine {
+  height: 100;
+  width: 2px;
+  background-color: rgb(255, 0, 110);
+}
+
+.horLine {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(255, 0, 110);
+}
+
+.heading {
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.text {
+  color: #E8E8E8;
+}
+
+header {
+  background-color: rgb(16, 16, 16);
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+}
+header .heroimg {
+  width: 100%;
+  height: 17vh;
+  background-color: rgb(43, 43, 43);
+}
+header .profile {
+  position: relative;
+}
+header .profile .profilePic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 0, 110);
+  margin-top: -40px;
+}
+header .profile .statusCircle {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  z-index: 2;
+  background-color: rgb(5, 119, 5);
+  border-radius: 50%;
+  margin-left: 65%;
+  margin-top: -30%;
+}
+header .overview {
+  display: flex;
+  justify-content: center;
+}
+header .overview .mediaIcons {
+  padding-top: 10px;
+  padding-right: 3%;
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header .overview .mediaIcons .fa-brands {
+  color: white;
+  font-size: 22px;
+  padding: 5px;
+}
+header .overview .patronite {
+  padding-top: 10px;
+  padding-left: 3%;
+}
+header .overview .patronite .svgPatronite {
+  background-color: rgb(43, 43, 43);
+  border-radius: 30px;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 50px;
+}
+.about .fullText {
+  margin-left: 20px;
+}
+.about .heading {
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  padding-bottom: 7px;
+}
+.about .text {
+  color: #E8E8E8;
+  padding-bottom: 7px;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 50px;
+}
+.portfolio .video1 {
+  margin-top: 20px;
+  border: 2px solid rgb(43, 43, 43);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.portfolio .video2 {
+  margin-top: 20px;
+  border: 2px solid rgb(43, 43, 43);
+  border-radius: 10px;
+}/*# sourceMappingURL=style.css.map */

@@ -256,4 +256,12 @@ header {
 }
 
 
+footer {
+    height: fit-content;
+    width: 100%;
+    background: rgb(43, 43, 43);
 
+    p {
+        color: rgb(123, 123, 123);
+    }
+}

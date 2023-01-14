@@ -1,6 +1,7 @@
 @use '_main.scss' as main;
 @use 'colors' as colors;
-
+@use '_scrollAnimation' as scrlAni;
+@use '_loadPage' as loadPage;
 
 header {
     background-color: colors.$main-background;
@@ -11,7 +12,12 @@ header {
     .heroimg {
         width: 100%;
         height: 17vh;
-        background-color: colors.$sec-background;
+        background-image: url(/images/giphy.gif);
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+
     }
     .profile {
         position: relative;
@@ -29,7 +35,7 @@ header {
             height: 30px;
             width: 30px;
             z-index: 2;
-            background-color: rgb(5, 119, 5);
+            background-color: rgb(15, 207, 15);
             border-radius: 50%;
             margin-left: 65%;
             margin-top: -30%;
@@ -153,6 +159,8 @@ header {
         margin-bottom: 10px;
 
         border: 2px solid rgb(51, 51, 51);
+
+
     }
 
     .techLogoContainer {
@@ -254,14 +262,23 @@ header {
         background-color: rgb(71, 1, 55);
     }
 }
+// Tailwindcss
+.techSticker12 {
+    background-color: rgb(1, 183, 214);
+}
 
 
 footer {
-    height: fit-content;
+    height: 500px;
     width: 100%;
     background: rgb(43, 43, 43);
 
     p {
         color: rgb(123, 123, 123);
     }
+}
+
+
+@media screen {
+    
 }

@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-
+    <title>Palladd - Home</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/48a6007466.js" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="/css/style.css">
 
     
     <link rel="stylesheet" href="/dist/output.css">
 
-    <title>Palladd - Home</title>
+
 </head>
 <body>
+
+<section class="loadPage">
+    <video autoplay muted src="/videos/loadingScreen.mp4"></video>
+</section>
+
+<section class="bodyShow">
     <header>
         <div>
-            <div class="heroimg"></div>
+            <div class="heroimg "></div>
 
             <div class="overview">
                 <div class="mediaIcons">
-                    <a href="https://www.twitter.com/lubie_frytki_" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://discordapp.com/users/533191201734524930" target="_blank"><i class="fa-brands fa-discord"></i></a>
-                    <a href="https://github.com/Palladd"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.twitter.com/lubie_frytki_" target="_blank" class=" linkedIcon hidden"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://discordapp.com/users/533191201734524930" target="_blank" class="linkedIcon hidden"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://github.com/Palladd" class="linkedIcon hidden"><i class="fa-brands fa-github"></i></a>
                 </div>
 
                 <div class="profile">
                     <img class="profilePic" src="/images/2023_1x1.png" alt="profile picture">
-                    <div class="statusCircle"></div>
+                    <!-- <div class="statusCircle"></div> -->
                 </div>
 
 
-                <div class="patronite">
+                <div class="patronite hidden">
                     <img class="svgPatronite" src="/images/SVG/patronite-SVG-02-white.svg" width="100px" alt="Patronite">
                 </div>
             </div>
@@ -40,7 +45,7 @@
     </header>
 
     <main>
-        <section class="about">
+        <section class="about hidden">
             <div class="verLine"></div>
 
             <div class="fullText">
@@ -49,22 +54,22 @@
             </div>
         </section>
 
-        <section class="portfolio">
+        <section class="portfolio hidden">
             <p class="heading">My portfolio</p>
             <div class="horLine"></div>
 
-            <video class="video1" autoplay muted loop src="/videos/monarPort.mov"></video>
-            <video class="video2" autoplay muted loop src="/videos/termsPort.mov"></video>
+            <video class="hidden video1" autoplay muted loop src="/videos/monarPort.mov"></video>
+            <video class="hidden video2" autoplay muted loop src="/videos/termsPort.mov"></video>
         </section>
 
-        <section class="technologies">
+        <section class="technologies hidden">
             <p class="heading">Tech Stack:</p>
             <div class="horLine"></div>
 
             <p class="text">I am currently working with this technologies. Mostly is Web Development, but other techs are also needed sometimes when bigger project are coming.</p>
 
             <div class="techStack">
-                <div class="techSticker techSticker1">
+                <div class="hidden techSticker techSticker1">
                     <div class="techLogoContainer techLogoContainer1">
                         <img class="techLogo techLogo1" src="/images/logos/GitHub.png" alt="GitHub Logo">
                     </div>
@@ -73,7 +78,7 @@
                     </div>
                 </div>
 
-                <div class="techSticker techSticker2">
+                <div class="hidden techSticker techSticker2">
                     <div class="techLogoContainer techLogoContainer2">
                         <img class="techLogo" src="/images/logos/Git.png" alt="Git Logo">
                     </div>
@@ -82,7 +87,7 @@
                     </div>
                 </div>
 
-                <div class="techSticker techSticker3">
+                <div class="hidden techSticker techSticker3">
                     <div class="techLogoContainer techLogoContainer3">
                         <img class="techLogo" src="/images/logos/VisualStudioCode.png" alt="Visual Studio Code Logo">
                     </div>
@@ -91,7 +96,7 @@
                     </div>
                 </div>
 
-                <div class="techSticker techSticker4">
+                <div class="hidden techSticker techSticker4">
                     <div class="techLogoContainer techLogoContainer4">
                         <img class="techLogo" src="/images/logos/Bootstrap.png" alt="Bootstrap Logo">
                     </div>
@@ -100,7 +105,7 @@
                     </div>
                 </div>
 
-                <div class="techSticker techSticker5">
+                <div class="hidden techSticker techSticker5">
                     <div class="techLogoContainer techLogoContainer5">
                         <img class="techLogo" src="/images/logos/Kali.png" alt="Kali Linux Logo">
                     </div>
@@ -109,7 +114,7 @@
                     </div>
                 </div>
 
-                <div class="techSticker techSticker6">
+                <div class="hidden techSticker techSticker6">
                     <div class="techLogoContainer techLogoContainer6">
                         <img class="techLogo" src="/images/logos/HTML5.png" alt="HTML5 Logo">
                     </div>
@@ -118,7 +123,7 @@
                     </div>
                 </div>
 
-                <div class="techSticker techSticker7">
+                <div class="hidden techSticker techSticker7">
                     <div class="techLogoContainer techLogoContainer7">
                         <img class="techLogo" src="/images/logos/CSS3.png" alt="CSS3 Logo">
                     </div>
@@ -127,7 +132,7 @@
                     </div>
                 </div>
 
-                <div class="techSticker techSticker8">
+                <div class="hidden techSticker techSticker8">
                     <div class="techLogoContainer techLogoContainer8">
                         <img class="techLogo" src="/images/logos/JS.png" alt="JavaScrit Logo">
                     </div>
@@ -136,7 +141,7 @@
                     </div>
                 </div>
 
-                <div class="techSticker techSticker9">
+                <div class="hidden techSticker techSticker9">
                     <div class="techLogoContainer techLogoContainer9">
                         <img class="techLogo" src="/images/logos/Sass.png" alt="SASS Logo">
                     </div>
@@ -145,7 +150,7 @@
                     </div>
                 </div>
 
-                <div class="techSticker techSticker10">
+                <div class="hidden techSticker techSticker10">
                     <div class="techLogoContainer techLogoContainer10">
                         <img class="techLogo" src="/images/logos/C++.png" alt="C++ Logo">
                     </div>
@@ -154,12 +159,21 @@
                     </div>
                 </div>
 
-                <div class="techSticker techSticker11">
+                <div class="hidden techSticker techSticker11">
                     <div class="techLogoContainer techLogoContainer11">
                         <img class="techLogo" src="/images/logos/AdobeXD.png" alt="AdobeXD Logo">
                     </div>
                     <div class="techText">
                         <p class="stickerText stickerText11">Adobe XD</p>
+                    </div>
+                </div>
+
+                <div class="hidden techSticker techSticker12">
+                    <div class="techLogoContainer techLogoContainer12">
+                        <img class="techLogo" src="/images/logos/Tailwind.png" alt="AdobeXD Logo">
+                    </div>
+                    <div class="techText">
+                        <p class="stickerText stickerText11">tailwindcss</p>
                     </div>
                 </div>
             </div>
@@ -170,5 +184,8 @@
         </footer>
 
     </main>
+    
+</section>
+    <script src="/JS/app.js"></script>
 </body>
 </html>

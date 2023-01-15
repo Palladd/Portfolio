@@ -52,7 +52,11 @@ p {
   color: #dfdfdf;
 }
 
-.hidden {
+.textIcon {
+  font-size: 1.3rem;
+}
+
+.hide {
   opacity: 0;
   transition: all 0.8s;
   transform: scale(0.9);
@@ -60,7 +64,7 @@ p {
 }
 
 @media (prefers-reduced-motion) {
-  .hidden {
+  .hide {
     transition: none;
   }
 }
@@ -88,6 +92,11 @@ p {
   opacity: 1;
   transform: scale(1);
   filter: blur(0);
+}
+
+.contact {
+  transition: 0.8s;
+  transition-delay: 0.4s;
 }
 
 .video2 {
@@ -163,8 +172,8 @@ p {
   z-index: 9;
   display: flex;
   justify-content: center;
-  -webkit-animation: fade 0.5s ease-in-out 3.6s 1 normal forwards;
-          animation: fade 0.5s ease-in-out 3.6s 1 normal forwards;
+  -webkit-animation: fade 0.5s ease-in-out 2.5s 1 normal forwards;
+          animation: fade 0.5s ease-in-out 2.5s 1 normal forwards;
 }
 .loadPage video {
   width: 50vw;
@@ -201,11 +210,9 @@ header {
 header .heroimg {
   width: 100%;
   height: 17vh;
-  background-image: url(/images/giphy.gif);
+  background-image: url(/images/old-man-my-computer.gif);
   background-position: center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 header .profile {
   position: relative;
@@ -286,6 +293,15 @@ header .overview .patronite .svgPatronite {
   height: fit-content;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+.portfolio .orgLink {
+  color: rgb(198, 207, 255);
+  text-align: center;
+  background-color: rgb(31, 31, 31);
+  text-decoration: underline;
+  border-radius: 13px;
+  padding: 3px;
+  margin-top: 10px;
 }
 .portfolio .video1 {
   margin-top: 20px;
@@ -404,11 +420,75 @@ header .overview .patronite .svgPatronite {
   background-color: rgb(1, 183, 214);
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+}
+.contact .contactHeading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contact .contactHeading .horLine {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 150px;
+}
+.contact p {
+  color: #E8E8E8;
+}
+.contact a {
+  color: #E8E8E8;
+  text-decoration: underline;
+  font-style: italic;
+}
+.contact .contactMail {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.contact .contactMail p {
+  font-size: 16px;
+  font-weight: 700;
+}
+.contact .contactMail a {
+  color: rgb(255, 0, 110);
+}
+.contact .contactSocial {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.contact .contactSocial div {
+  display: flex;
+  justify-content: center;
+}
+.contact .contactSocial p {
+  font-size: 16px;
+  font-weight: 700;
+}
+.contact .contactSocial .linkedIcon {
+  font-size: 30px;
+  padding: 5px;
+}
+
 footer {
-  height: 500px;
   width: 100%;
   background: rgb(43, 43, 43);
+  align-items: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+footer .footerText {
+  display: flex;
 }
 footer p {
   color: rgb(123, 123, 123);
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */

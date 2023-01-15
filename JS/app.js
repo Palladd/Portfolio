@@ -6,7 +6,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
-const hiddenElements = document.querySelectorAll('.hidden')
+const hiddenElements = document.querySelectorAll('.hide')
 hiddenElements.forEach((el) => observer.observe(el))
 
 // CODE ABOVE FROM FIRESHIP.IO
@@ -22,5 +22,5 @@ const pageLoadTimeoutScreen = () => {
     loadPageView.classList.add('loadPageHidden')
 }
 
-setTimeout(pageLoadTimeout, 3000)
-setTimeout(pageLoadTimeoutScreen, 4500)
+setTimeout(pageLoadTimeout, 2000)
+setTimeout(pageLoadTimeoutScreen, 4600)

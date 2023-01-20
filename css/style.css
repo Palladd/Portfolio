@@ -21,7 +21,6 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
 }
 
 p {
@@ -31,7 +30,7 @@ p {
 .verLine {
   height: 100;
   width: 2px;
-  background-color: rgb(255, 0, 110);
+  background-color: rgb(95, 22, 197);
 }
 
 .horLine {
@@ -39,7 +38,30 @@ p {
   height: 2px;
   margin-top: 8px;
   margin-bottom: 8px;
-  background-color: rgb(255, 0, 110);
+}
+
+.floatingBgDown {
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 20vh;
+  background-image: url(/images/SVG/wave-haikeiUpsiteDown.svg);
+  margin-top: -1px;
+}
+
+.floatingBgUp {
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 20vh;
+  background-image: url(/images/SVG/wave-haikei.svg);
+}
+
+.floatingBg {
+  background-color: rgb(95, 22, 197);
+  width: 100vw;
 }
 
 .heading {
@@ -221,18 +243,8 @@ header .profile .profilePic {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  border: 2px solid rgb(255, 0, 110);
+  border: 2px solid rgb(95, 22, 197);
   margin-top: -40px;
-}
-header .profile .statusCircle {
-  position: absolute;
-  height: 30px;
-  width: 30px;
-  z-index: 2;
-  background-color: rgb(15, 207, 15);
-  border-radius: 50%;
-  margin-left: 65%;
-  margin-top: -30%;
 }
 header .overview {
   display: flex;
@@ -291,8 +303,9 @@ header .overview .patronite .svgPatronite {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  margin-top: 50px;
-  margin-bottom: 50px;
+}
+.portfolio .horLine {
+  background-color: #fff;
 }
 .portfolio .orgLink {
   color: rgb(198, 207, 255);
@@ -326,6 +339,7 @@ header .overview .patronite .svgPatronite {
 }
 .technologies .horLine {
   width: 70%;
+  background-color: rgb(95, 22, 197);
 }
 .technologies .techStack {
   display: flex;
@@ -428,8 +442,6 @@ header .overview .patronite .svgPatronite {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  margin-top: 20vh;
-  margin-bottom: 20vh;
 }
 .contact .contactHeading {
   text-align: center;
@@ -439,6 +451,7 @@ header .overview .patronite .svgPatronite {
   margin-top: 0;
   margin-bottom: 0;
   width: 150px;
+  background-color: #fff;
 }
 .contact p {
   color: #E8E8E8;
@@ -458,7 +471,7 @@ header .overview .patronite .svgPatronite {
   font-weight: 700;
 }
 .contact .contactMail a {
-  color: rgb(255, 0, 110);
+  color: #E8E8E8;
 }
 .contact .contactSocial {
   padding-top: 20px;
@@ -479,16 +492,28 @@ header .overview .patronite .svgPatronite {
 }
 
 footer {
-  width: 100%;
-  background: rgb(43, 43, 43);
-  align-items: center;
-  padding-bottom: 5px;
-  padding-top: 5px;
-}
-footer .footerText {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 85%;
 }
-footer p {
-  color: rgb(123, 123, 123);
-  font-size: 12px;
+footer .rightsReserv {
+  color: rgb(162, 162, 162);
+  font-size: 11px;
+  padding: 30px;
+}
+footer .footerContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+footer .footerContainer .footTitle {
+  color: white;
+}
+footer .footerContainer .footText {
+  color: rgb(162, 162, 162);
+  font-size: 13px;
 }/*# sourceMappingURL=style.css.map */

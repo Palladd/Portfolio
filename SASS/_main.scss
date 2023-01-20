@@ -10,9 +10,7 @@
 body {
     background-color: #101010;
     min-height: 100vh;
-
 }
-
 
 // JS SCRIPT
 .bodyShow {
@@ -24,12 +22,10 @@ body {
 }
 // END OF JS SCRIPT
 
-
 main {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
 }
 
 p {
@@ -47,7 +43,31 @@ p {
     height: 2px;
     margin-top: 8px;
     margin-bottom: 8px;
+}
+
+// Backgorund
+.floatingBgDown {
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 20vh;
+    background-image: url(/images/SVG/wave-haikeiUpsiteDown.svg);
+    margin-top: -1px;
+}
+
+.floatingBgUp {
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 20vh;
+    background-image: url(/images/SVG/wave-haikei.svg);
+}
+
+.floatingBg {
     background-color: colors.$accent;
+    width: 100vw;    
 }
 
 .heading {
@@ -63,3 +83,4 @@ p {
 .textIcon {
     font-size: 1.3rem;
 }
+

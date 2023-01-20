@@ -20,6 +20,7 @@
 </section>
 
 <section class="bodyShow">
+    
     <header>
         <div>
             <div class="heroimg"></div>
@@ -54,15 +55,21 @@
             </div>
         </section>
 
-        <section class="portfolio hide">
-            <p class="heading"></i> My portfolio:</p>
-            <div class="horLine"></div>
+        <div class="floatingBgUp"></div>
 
-            <a href="https://babigoszczmonar.pl/" class="orgLink">www.babigoszczmonar.pl</a>
+        <div class="floatingBg flex flex-col items-center">
+            <section class="portfolio hide">
+                <p class="heading"></i> My portfolio:</p>
+                <div class="horLine"></div>
 
-            <video class="hide video1" autoplay muted loop src="/videos/monarPort.mov"></video>
-            <video class="hide video2" autoplay muted loop src="/videos/termsPort.mov"></video>
-        </section>
+                <a href="https://babigoszczmonar.pl/" class="orgLink">www.babigoszczmonar.pl</a>
+
+                <video class="hide video1" autoplay muted loop src="/videos/monarPort.mov"></video>
+                <video class="hide video2" autoplay muted loop src="/videos/termsPort.mov"></video>
+            </section>
+        </div>
+
+        <div class="floatingBgDown"></div>
 
         <section class="technologies hide">
             <p class="heading"><i class="fa-solid fa-code textIcon"></i> Tech Stack:</p>
@@ -180,39 +187,47 @@
                 </div>
             </div>
         </section>
+
+        <div class="floatingBgUp"></div>
+        <div class="floatingBg flex flex-col items-center">
+            <section class="contact hide">
+                <div class="contactHeading">
+                    <div class="horLine"></div>
+                    <p class="heading">Contact</p>
+                    <div class="horLine"></div>
+                </div>
+            
+                <div class="contactMail">
+                    <p>You can contact me via email:</p>
+                    <a href="mailto:palladd@palladev.io">palladd@palladev.io</a>
+                </div>
+            
+                <div class="contactSocial">
+                    <p>Or social media:</p>
+                    <div>
+                        <a href="https://discordapp.com/users/533191201734524930" target="_blank" class="linkedIcon hide"><i class="fa-brands fa-discord"></i></a>
+                        <a href="https://www.instagram.com/marcin_boroo/" target="_blank" class="linkedIcon hide"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </section>
+        </div>
     
-        
-        
+        <div class="floatingBgDown"></div>
+        <footer>
+            <div class="footerContainer hide">
+                <div class="leftFoot">
+                    <p class="footTitle">Settings:</p>
+                    <p class="footText">Dark Mode ON/OFF</p>
+                    <p class="footText">Floating area ON/OFF</p>
+                </div>
 
-        <section class="contact hide">
-            <div class="contactHeading">
-                <div class="horLine"></div>
-                <p class="heading">Contact</p>
-                <div class="horLine"></div>
-            </div>
-
-            <div class="contactMail">
-                <p>You can contact me via email:</p>
-                <a href="mailto:palladd@palladev.io">palladd@palladev.io</a>
-            </div>
-
-            <div class="contactSocial">
-                <p>Or social media:</p>
-                <div>
-                    <a href="https://discordapp.com/users/533191201734524930" target="_blank" class="linkedIcon hide"><i class="fa-brands fa-discord"></i></a>
-                    <a href="https://www.instagram.com/marcin_boroo/" target="_blank" class="linkedIcon hide"><i class="fa-brands fa-instagram"></i></a>
+                <div class="rightFoot">
+                    <p class="footTitle">Privacy Policy:</p>
+                    <p class="footText">Cookies ON/OFF</p>
                 </div>
             </div>
-        </section>
-    
 
-        <footer class="flex flex-col">
-            <div class="footerText">
-                <a href="/site" class="mr-2"><p>Settings</p></a>
-                <a href="/site"><p>Privacy Policy</p></a>
-            </div>
-
-            <p>ALL RIGHTS RESERVED © | <a href="https://github.com/Palladd" target="_blank">Palladd</a> 2023</p>
+            <p class="rightsReserv">ALL RIGHTS RESERVED © | <a href="https://github.com/Palladd" target="_blank">Palladd</a> 2023</p>
         </footer>
     </main>
 </section>

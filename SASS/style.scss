@@ -28,18 +28,8 @@ header {
             border: 2px solid colors.$accent;
             margin-top: -40px;
         }
-
-        .statusCircle {
-            position: absolute;
-            height: 30px;
-            width: 30px;
-            z-index: 2;
-            background-color: rgb(15, 207, 15);
-            border-radius: 50%;
-            margin-left: 65%;
-            margin-top: -30%;
-        }
     }
+
     .overview {
         display: flex;
         justify-content: center;
@@ -107,8 +97,10 @@ header {
 
     width: 85%;
     height: fit-content;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    
+    .horLine {
+        background-color: #fff;
+    }
 
     .orgLink {
         color: rgb(198, 207, 255);
@@ -146,6 +138,7 @@ header {
 
     .horLine {
         width: 70%;
+        background-color: colors.$accent;
     }
 
     .techStack {
@@ -283,8 +276,6 @@ header {
 
     width: 85%;
     height: fit-content;
-    margin-top: 20vh;
-    margin-bottom: 20vh;
 
     .contactHeading {
         text-align: center;
@@ -294,6 +285,7 @@ header {
             margin-top: 0;
             margin-bottom: 0;
             width: 150px;
+            background-color: #fff;
         }
     }
 
@@ -319,7 +311,7 @@ header {
         }
 
         a {
-            color: colors.$accent;
+            color: #E8E8E8;
         }
     }
 
@@ -347,19 +339,34 @@ header {
 }
 
 footer {
-    width: 100%;
-    background: rgb(43, 43, 43);
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    padding-bottom: 5px;
-    padding-top: 5px;
 
-    .footerText {
-        display: flex;
+    height: fit-content;
+    width: 85%;
 
+    .rightsReserv {
+        color: rgb(162, 162, 162);
+        font-size: 11px;
+        padding: 30px;
     }
+    
+    .footerContainer {
+        display: flex;
+        justify-content: space-between;
 
-    p {
-        color: rgb(123, 123, 123);
-        font-size: 12px;
+        width: 100%;
+
+        .footTitle {
+            color: white;
+        }
+
+        .footText {
+            color: rgb(162, 162, 162);
+            font-size: 13px;
+        }
+
+
     }
 }

@@ -524,8 +524,3 @@ video {
 .items-center {
   align-items: center;
 }
-
-.bg-main_background {
-  --tw-bg-opacity: 1;
-  background-color: rgb(16 16 16 / var(--tw-bg-opacity));
-}

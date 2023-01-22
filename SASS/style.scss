@@ -4,7 +4,7 @@
 @use '_loadPage' as loadPage;
 
 header {
-    background-color: colors.$main-background;
+    background-color: colors.$white-background;
     height: 25vh;
     display: flex;
     flex-direction: column;
@@ -44,7 +44,6 @@ header {
             align-items: center;
 
             .fa-brands {
-                color: white;
                 font-size: 22px;
                 padding: 5px;
             }
@@ -98,6 +97,10 @@ header {
     width: 85%;
     height: fit-content;
     
+    p {
+        color: white;
+    }
+
     .horLine {
         background-color: #fff;
     }
@@ -347,7 +350,6 @@ footer {
     width: 85%;
 
     .rightsReserv {
-        color: rgb(162, 162, 162);
         font-size: 11px;
         padding: 30px;
     }
@@ -358,15 +360,12 @@ footer {
 
         width: 100%;
 
-        .footTitle {
-            color: white;
-        }
-
         .footText {
-            color: rgb(162, 162, 162);
             font-size: 13px;
         }
 
-
+        .rightFoot {
+            text-align: right;
+        }
     }
 }

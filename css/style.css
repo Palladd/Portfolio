@@ -5,7 +5,6 @@
 }
 
 body {
-  background-color: #101010;
   min-height: 100vh;
 }
 
@@ -27,6 +26,10 @@ p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.textIcon {
+  font-size: 1.3rem;
+}
+
 .verLine {
   height: 100;
   width: 2px;
@@ -40,13 +43,17 @@ p {
   margin-bottom: 8px;
 }
 
+.floatingBg {
+  background-color: rgb(95, 22, 197);
+  width: 100%;
+}
+
 .floatingBgDown {
   background-position: center;
   background-size: cover;
   background-repeat: repeat-x;
   width: 100%;
   height: 20vh;
-  background-image: url(/images/SVG/wave-haikeiUpsiteDown.svg);
   margin-top: -1px;
 }
 
@@ -56,26 +63,81 @@ p {
   background-repeat: repeat-x;
   width: 100%;
   height: 20vh;
+}
+
+.floatingBgUpBright {
+  background-image: url(/images/SVG/wave-haikei-white.svg);
+  transition: all 0.5s;
+}
+
+.floatingBgDownBright {
+  background-image: url(/images/SVG/wave-haikeiUpsiteDown-white.svg);
+  transition: all 0.5s;
+}
+
+.floatingBgUpDark {
   background-image: url(/images/SVG/wave-haikei.svg);
+  transition: all 0.5s;
 }
 
-.floatingBg {
-  background-color: rgb(95, 22, 197);
-  width: 100vw;
+.floatingBgDownDark {
+  background-image: url(/images/SVG/wave-haikeiUpsiteDown.svg);
+  transition: all 0.5s;
 }
 
-.heading {
-  color: white;
+.darkBackground {
+  background-color: rgb(16, 16, 16);
+  transition: all 0.5s;
+}
+
+.brightBackground {
+  background-color: rgb(245, 245, 245);
+  transition: all 0.5s;
+}
+
+.darkColor {
+  color: rgb(16, 16, 16);
+  transition: all 0.5s;
+}
+
+.dark-lightColor {
+  color: rgb(206, 206, 206);
+  transition: all 0.5s;
+}
+
+.brightColor {
+  color: rgb(245, 245, 245);
+  transition: all 0.5s;
+}
+
+.bright-darkColor {
+  color: rgb(83, 83, 83);
+  transition: all 0.5s;
+}
+
+.dark-whiteColorFoot {
+  color: rgb(162, 162, 162);
+  transition: all 0.5s;
+}
+
+.whiteColorTitleFoot {
+  color: rgb(245, 245, 245);
+  transition: all 0.5s;
+}
+
+.darkColorFoot {
+  color: rgb(53, 53, 53);
+  transition: all 0.5s;
+}
+
+.darkColorTitleFoot {
+  color: rgb(16, 16, 16);
+  transition: all 0.5s;
+}
+
+.headingSCSS {
   font-weight: 700;
   font-size: 30px;
-}
-
-.text {
-  color: #dfdfdf;
-}
-
-.textIcon {
-  font-size: 1.3rem;
 }
 
 .hide {
@@ -224,7 +286,7 @@ p {
 }
 
 header {
-  background-color: rgb(16, 16, 16);
+  background-color: rgb(245, 245, 245);
   height: 25vh;
   display: flex;
   flex-direction: column;
@@ -260,7 +322,6 @@ header .overview .mediaIcons {
   align-items: center;
 }
 header .overview .mediaIcons .fa-brands {
-  color: white;
   font-size: 22px;
   padding: 5px;
 }
@@ -303,6 +364,9 @@ header .overview .patronite .svgPatronite {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+.portfolio p {
+  color: white;
 }
 .portfolio .horLine {
   background-color: #fff;
@@ -501,7 +565,6 @@ footer {
   width: 85%;
 }
 footer .rightsReserv {
-  color: rgb(162, 162, 162);
   font-size: 11px;
   padding: 30px;
 }
@@ -510,10 +573,9 @@ footer .footerContainer {
   justify-content: space-between;
   width: 100%;
 }
-footer .footerContainer .footTitle {
-  color: white;
-}
 footer .footerContainer .footText {
-  color: rgb(162, 162, 162);
   font-size: 13px;
+}
+footer .footerContainer .rightFoot {
+  text-align: right;
 }/*# sourceMappingURL=style.css.map */

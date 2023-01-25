@@ -74,6 +74,12 @@ const themeChanger = () => {
 
     whiteColorTitleFoot.forEach(i => {i.classList.toggle('whiteColorTitleFoot')})
     whiteColorTitleFoot.forEach(i => {i.classList.toggle('darkColorTitleFoot')})
-}
 
+    darkModeBtn.textContent = "Dark Mode OFF"
+}
 darkModeBtn.addEventListener('click', themeChanger)
+
+
+
+// Site zoom changer
+document.body.style.zoom="110%"

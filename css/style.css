@@ -140,6 +140,10 @@ p {
   font-size: 30px;
 }
 
+.textSCSS {
+  font-size: 1rem;
+}
+
 .hide {
   opacity: 0;
   transition: all 0.8s;
@@ -250,12 +254,13 @@ p {
 
 .loadPage {
   position: absolute;
-  height: 100vh;
-  background-color: rgb(0, 0, 0);
-  width: 100vw;
-  z-index: 9;
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  z-index: 9;
   -webkit-animation: fade 0.5s ease-in-out 2.5s 1 normal forwards;
           animation: fade 0.5s ease-in-out 2.5s 1 normal forwards;
 }
@@ -285,6 +290,39 @@ p {
   display: none;
 }
 
+::-webkit-scrollbar {
+  width: 0.9rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(43, 43, 43);
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(121, 121, 121);
+  border-radius: 30px;
+  border: 3px solid rgb(53, 54, 58);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(97, 97, 97);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: rgb(176, 140, 226);
+}
+
+::-moz-selection {
+  background-color: rgb(176, 140, 226);
+  color: #fff;
+}
+
+::selection {
+  background-color: rgb(176, 140, 226);
+  color: #fff;
+}
+
 header {
   background-color: rgb(245, 245, 245);
   height: 25vh;
@@ -301,7 +339,7 @@ header .heroimg {
 header .profile {
   position: relative;
 }
-header .profile .profilePic {
+header .profilePic {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -315,19 +353,28 @@ header .overview {
 header .overview .mediaIcons {
   padding-top: 10px;
   padding-right: 3%;
-  width: 100px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-header .overview .mediaIcons .fa-brands {
+header .overview .mediaIcons .linkedIcon {
   font-size: 22px;
   padding: 5px;
 }
+header .overview .mediaIcons .fa-brands {
+  transition: 0.5s;
+}
+header .overview .mediaIcons .fa-brands:hover {
+  color: rgb(95, 22, 197);
+}
 header .overview .patronite {
-  padding-top: 10px;
+  padding-top: 15px;
   padding-left: 3%;
+  padding-right: 1%;
 }
 header .overview .patronite .svgPatronite {
   background-color: rgb(43, 43, 43);
@@ -379,6 +426,12 @@ header .overview .patronite .svgPatronite {
   border-radius: 13px;
   padding: 3px;
   margin-top: 10px;
+  transition: 0.5s;
+}
+.portfolio .orgLink:hover {
+  background-color: rgb(39, 11, 78);
+  color: white;
+  padding: 12px;
 }
 .portfolio .video1 {
   margin-top: 20px;
@@ -409,6 +462,18 @@ header .overview .patronite .svgPatronite {
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
+}
+.technologies .techStack a .linkHover {
+  transition: 0.5s;
+}
+.technologies .techStack a .stickerText1 {
+  transition: 0.5s;
+}
+.technologies .techStack a:hover .linkHover {
+  background-color: rgb(0, 0, 0);
+}
+.technologies .techStack a:hover .stickerText1 {
+  color: white;
 }
 .technologies .techSticker {
   display: flex;
@@ -507,15 +572,13 @@ header .overview .patronite .svgPatronite {
   height: -moz-fit-content;
   height: fit-content;
 }
+.contact .horLine {
+  margin-top: 0;
+  width: 160px;
+  background-color: #fff;
+}
 .contact .contactHeading {
   text-align: center;
-  margin-bottom: 20px;
-}
-.contact .contactHeading .horLine {
-  margin-top: 0;
-  margin-bottom: 0;
-  width: 150px;
-  background-color: #fff;
 }
 .contact p {
   color: #E8E8E8;
@@ -530,12 +593,15 @@ header .overview .patronite .svgPatronite {
   align-items: center;
   flex-direction: column;
 }
-.contact .contactMail p {
-  font-size: 16px;
-  font-weight: 700;
-}
 .contact .contactMail a {
   color: #E8E8E8;
+  transition: 0.5s;
+}
+.contact .contactMail a:hover {
+  color: rgb(39, 11, 78);
+  padding: 7px;
+  background-color: #fff;
+  border-radius: 10px;
 }
 .contact .contactSocial {
   padding-top: 20px;
@@ -546,13 +612,26 @@ header .overview .patronite .svgPatronite {
   display: flex;
   justify-content: center;
 }
-.contact .contactSocial p {
-  font-size: 16px;
-  font-weight: 700;
-}
 .contact .contactSocial .linkedIcon {
   font-size: 30px;
   padding: 5px;
+}
+.contact .contactSocial .fa-brands {
+  transition: 0.5s;
+  aspect-ratio: 1/1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.contact .contactSocial .fa-brands:hover {
+  color: rgb(39, 11, 78);
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.contactText {
+  font-size: 16px;
+  font-weight: 700;
 }
 
 footer {
@@ -564,18 +643,358 @@ footer {
   height: fit-content;
   width: 85%;
 }
-footer .rightsReserv {
-  font-size: 11px;
-  padding: 30px;
-}
 footer .footerContainer {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-footer .footerContainer .footText {
-  font-size: 13px;
-}
 footer .footerContainer .rightFoot {
   text-align: right;
+}
+
+.footText {
+  font-size: 13px;
+}
+
+.rightsReserv {
+  font-size: 11px;
+  padding: 30px;
+}
+
+@media (min-height: 790px) {
+  .about {
+    margin-top: 10px;
+  }
+  .fa-brands {
+    font-size: 25px;
+  }
+  .floatingBgUp {
+    height: 10vh;
+  }
+  .floatingBgDown {
+    height: 12vh;
+  }
+}
+@media (min-width: 330px) {
+  .floatingBgUp {
+    height: 20vh;
+  }
+  .floatingBgDown {
+    height: 20vh;
+  }
+}
+@media (min-width: 432px) {
+  .fa-brands {
+    font-size: 30px;
+  }
+  .svgPatronite {
+    width: 120px;
+  }
+}
+@media (min-width: 660px) {
+  .floatingBgUp {
+    height: 25vh;
+  }
+  .floatingBgDown {
+    height: 25vh;
+  }
+  .about {
+    width: 70%;
+  }
+  .portfolio {
+    width: 80%;
+  }
+  .technologies {
+    width: 80%;
+  }
+  footer {
+    width: 70%;
+  }
+  .loadPage video {
+    width: 40vw;
+  }
+}
+@media (min-width: 810px) {
+  .floatingBgUp {
+    height: 30vh;
+  }
+  .floatingBgDown {
+    height: 35vh;
+  }
+  .about {
+    width: 70%;
+  }
+  .portfolio {
+    width: 80%;
+  }
+  .technologies {
+    width: 80%;
+  }
+  footer {
+    width: 70%;
+  }
+  .profile .profilePic {
+    width: 100px;
+    height: 100px;
+  }
+  .headingSCSS {
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+  .textSCSS {
+    font-size: 1.2rem;
+  }
+  .fa-brands {
+    font-size: 36px;
+  }
+  .svgPatronite {
+    height: 45px;
+    width: 135px;
+  }
+  .footText {
+    font-size: 0.9rem;
+  }
+  .footTitle {
+    font-size: 1.2rem;
+  }
+  .contactText {
+    font-size: 1.2rem;
+  }
+  .contact .horLine {
+    margin-top: 0;
+    width: 300px;
+    background-color: #fff;
+  }
+  .loadPage video {
+    width: 38vw;
+  }
+}
+@media (min-width: 986px) {
+  .floatingBgUp {
+    height: 40vh;
+  }
+  .floatingBgDown {
+    height: 40vh;
+  }
+  .about {
+    width: 60%;
+  }
+  .portfolio {
+    width: 70%;
+  }
+  .technologies {
+    width: 70%;
+  }
+  footer {
+    width: 60%;
+  }
+  .loadPage video {
+    width: 30vw;
+  }
+}
+@media (min-width: 1122px) {
+  .about {
+    width: 55%;
+  }
+  .portfolio {
+    width: 65%;
+  }
+  .technologies {
+    width: 65%;
+  }
+  footer {
+    width: 55%;
+  }
+  .loadPage video {
+    width: 320px;
+  }
+}
+@media (min-width: 1294px) {
+  .floatingBgUp {
+    height: 45vh;
+  }
+  .floatingBgDown {
+    height: 45vh;
+  }
+  .about {
+    width: 50%;
+  }
+  .portfolio {
+    width: 68%;
+  }
+  .technologies {
+    width: 60%;
+  }
+  footer {
+    width: 50%;
+  }
+  .profile .profilePic {
+    width: 120px;
+    height: 120px;
+  }
+  .headingSCSS {
+    font-weight: 700;
+    font-size: 2.6rem;
+  }
+  .textSCSS {
+    font-size: 1.3rem;
+  }
+  .fa-brands {
+    font-size: 40px;
+  }
+  .svgPatronite {
+    height: 50px;
+    width: 150px;
+  }
+  .footText {
+    font-size: 1rem;
+  }
+  .footTitle {
+    font-size: 1.3rem;
+  }
+  .contactText {
+    font-size: 1.3rem;
+  }
+  .contact .horLine {
+    margin-top: 0;
+    width: 350px;
+    background-color: #fff;
+  }
+}
+@media (min-width: 1476px) {
+  .floatingBgUp {
+    height: 50vh;
+  }
+  .floatingBgDown {
+    height: 50vh;
+  }
+  .about {
+    width: 45%;
+  }
+  .portfolio {
+    width: 60%;
+  }
+  .technologies {
+    width: 50%;
+  }
+  footer {
+    width: 40%;
+  }
+}
+@media (min-width: 1646px) {
+  .floatingBgUp {
+    height: 55vh;
+  }
+  .floatingBgDown {
+    height: 55vh;
+  }
+  .profile .profilePic {
+    width: 120px;
+    height: 120px;
+  }
+  .headingSCSS {
+    font-weight: 700;
+    font-size: 2.8rem;
+  }
+  .textSCSS {
+    font-size: 1.3rem;
+  }
+  .fa-brands {
+    font-size: 40px;
+  }
+  .svgPatronite {
+    height: 50px;
+    width: 150px;
+  }
+  .footText {
+    font-size: 1rem;
+  }
+  .footTitle {
+    font-size: 1.4rem;
+  }
+  .contactText {
+    font-size: 1.4rem;
+  }
+  .contact .horLine {
+    margin-top: 0;
+    width: 400px;
+    background-color: #fff;
+  }
+}
+@media (min-width: 1822px) {
+  .floatingBgUp {
+    height: 60vh;
+  }
+  .floatingBgDown {
+    height: 60vh;
+  }
+  .about {
+    width: 40%;
+  }
+  .portfolio {
+    width: 65%;
+  }
+  .technologies {
+    width: 45%;
+  }
+  footer {
+    width: 40%;
+  }
+}
+@media (min-width: 1976px) {
+  .floatingBgUp {
+    height: 65vh;
+  }
+  .floatingBgDown {
+    height: 65vh;
+  }
+  .about {
+    width: 36%;
+  }
+  .portfolio {
+    width: 55%;
+  }
+  .profile .profilePic {
+    width: 120px;
+    height: 120px;
+  }
+  .headingSCSS {
+    font-weight: 700;
+    font-size: 2.9rem;
+  }
+  .textSCSS {
+    font-size: 1.4rem;
+  }
+  .fa-brands {
+    font-size: 40px;
+  }
+  .svgPatronite {
+    height: 50px;
+    width: 150px;
+  }
+  .footText {
+    font-size: 1rem;
+  }
+  .footTitle {
+    font-size: 1.4rem;
+  }
+  .contactText {
+    font-size: 1.5rem;
+  }
+  .contact .horLine {
+    margin-top: 0;
+    width: 420px;
+    background-color: #fff;
+  }
+}
+@media (min-width: 2144px) {
+  .floatingBgUp {
+    height: 70vh;
+  }
+  .floatingBgDown {
+    height: 70vh;
+  }
+  .about {
+    width: 30%;
+  }
 }/*# sourceMappingURL=style.css.map */

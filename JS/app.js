@@ -47,6 +47,7 @@ const floatingBgDownDark = document.querySelectorAll('.floatingBgDownDark')
 
 // Buttons
 const darkModeBtn = document.querySelector('.DarkModeButton')
+const btnSpanDarkMode = document.querySelector('.spanOfDarkModeButton')
 
 
 const themeChanger = () => {
@@ -75,7 +76,16 @@ const themeChanger = () => {
     whiteColorTitleFoot.forEach(i => {i.classList.toggle('whiteColorTitleFoot')})
     whiteColorTitleFoot.forEach(i => {i.classList.toggle('darkColorTitleFoot')})
 
-    darkModeBtn.textContent = "Dark Mode OFF"
+    if(mainBg[0].classList.contains('brightBackground')) {
+        darkModeBtn.innerHTML = "Dark Mode OFF";
+        darkModeBtn.classList.remove('statusChangeGreen')
+        darkModeBtn.classList.add('statusChangeRed')
+    }
+    else if(mainBg[0].classList.contains('darkBackground')) {
+        darkModeBtn.innerHTML = "Dark Mode ON";
+        darkModeBtn.classList.add('statusChangeGreen')
+        darkModeBtn.classList.remove('statusChangeRed')
+    }
 }
 darkModeBtn.addEventListener('click', themeChanger)
 

@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+p {
+    color: rgb(199, 199, 199);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgb(21, 21, 21);
+}
+
+.icon {
+    color: rgb(151, 33, 33);
+    font-size: 150px;
+}
+
+.textIcon {
+    animation: fadeGlobal 2s ease 0.5s 1 normal forwards;
+}
+
+// Animation
+@keyframes fadeGlobal {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.container {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: borderOne 0.5s ease-in 2.5s 1 normal forwards;
+    padding: 30px;
+}
+
+.text {
+    padding-left: 30px;
+    width: 300px;
+
+    p {
+        font-size: 30px;
+        font-weight: 800;
+        animation: fadeGlobal 2s ease 0.5s 1 normal forwards;
+
+        span {
+            text-decoration: underline;
+        }
+    }
+}
+
+.backButton {
+    background-color: rgb(151, 33, 33);
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 800;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    height: 45px;
+    width: 230px;
+    opacity: 0;
+    box-shadow: 2px 2px 20px rgb(151, 33, 33);
+
+    animation: fadeGlobal 2s ease 2s 1 normal forwards;
+}
+
+.backButton:hover {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.backButton:active {
+    background-color: rgb(111, 24, 24);
+    box-shadow: 2px 2px 20px rgb(75, 16, 16);
+}
+
+@media (min-width: 320px) {
+    .container {
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    .icon {
+        font-size: 100px;
+        padding-right: 10px;
+    }
+
+    .text {
+        width: min-content;
+        padding-left: 0;
+
+        p {
+            font-size: 30px;
+            width: fit-content;
+        }
+    }
+    
+    .textIcon {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1255px) {
+    .icon {
+        font-size: 130px;
+        padding-right: 30px;
+    }
+
+    .text {
+        width: min-content;
+        padding-left: 0;
+
+        p {
+            font-size: 39px;
+            width: 350px;
+        }
+    }
+}

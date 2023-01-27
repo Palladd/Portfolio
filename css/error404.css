@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(199, 199, 199);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(21, 21, 21);
+}
+
+.icon {
+  color: rgb(151, 33, 33);
+  font-size: 150px;
+}
+
+.textIcon {
+  -webkit-animation: fadeGlobal 2s ease 0.5s 1 normal forwards;
+          animation: fadeGlobal 2s ease 0.5s 1 normal forwards;
+}
+
+@-webkit-keyframes fadeGlobal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeGlobal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: borderOne 0.5s ease-in 2.5s 1 normal forwards;
+          animation: borderOne 0.5s ease-in 2.5s 1 normal forwards;
+  padding: 30px;
+}
+
+.text {
+  padding-left: 30px;
+  width: 300px;
+}
+.text p {
+  font-size: 30px;
+  font-weight: 800;
+  -webkit-animation: fadeGlobal 2s ease 0.5s 1 normal forwards;
+          animation: fadeGlobal 2s ease 0.5s 1 normal forwards;
+}
+.text p span {
+  text-decoration: underline;
+}
+
+.backButton {
+  background-color: rgb(151, 33, 33);
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 800;
+  color: white;
+  border: 0;
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  height: 45px;
+  width: 230px;
+  opacity: 0;
+  box-shadow: 2px 2px 20px rgb(151, 33, 33);
+  -webkit-animation: fadeGlobal 2s ease 2s 1 normal forwards;
+          animation: fadeGlobal 2s ease 2s 1 normal forwards;
+}
+
+.backButton:hover {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.backButton:active {
+  background-color: rgb(111, 24, 24);
+  box-shadow: 2px 2px 20px rgb(75, 16, 16);
+}
+
+@media (min-width: 320px) {
+  .container {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  .icon {
+    font-size: 100px;
+    padding-right: 10px;
+  }
+  .text {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    padding-left: 0;
+  }
+  .text p {
+    font-size: 30px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .textIcon {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1255px) {
+  .icon {
+    font-size: 130px;
+    padding-right: 30px;
+  }
+  .text {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    padding-left: 0;
+  }
+  .text p {
+    font-size: 39px;
+    width: 350px;
+  }
+}/*# sourceMappingURL=error404.css.map */

@@ -445,9 +445,6 @@ button:active {
   p:nth-child(3) {
     font-size: 1.7rem;
   }
-  p {
-    width: 60%;
-  }
 }
 ::-moz-selection {
   background-color: rgb(101, 117, 116);
@@ -456,4 +453,4 @@ button:active {
 ::selection {
   background-color: rgb(101, 117, 116);
   color: white;
-}/*# sourceMappingURL=EAS.css.map */
+}/*# sourceMappingURL=EAS.css.map */eMappingURL=EAS.css.map */

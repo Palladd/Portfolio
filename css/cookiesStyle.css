@@ -40,7 +40,6 @@ section {
   display: flex;
   justify-content: center;
   width: 80vw;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   background-color: rgb(34, 34, 34);
@@ -66,15 +65,6 @@ section .heading {
   font-size: 30px;
   font-weight: 700;
   padding-bottom: 3px;
-}
-
-@-webkit-keyframes fadeGlobal {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @keyframes fadeGlobal {
@@ -107,8 +97,7 @@ section .heading {
   width: 230px;
   opacity: 0;
   box-shadow: 2px 2px 20px rgb(33, 51, 151);
-  -webkit-animation: fadeGlobal 2s ease 2s 1 normal forwards;
-          animation: fadeGlobal 2s ease 2s 1 normal forwards;
+  animation: fadeGlobal 2s ease 2s 1 normal forwards;
 }
 
 .backButton:hover {
@@ -133,7 +122,6 @@ section .heading {
 .fullscreenNavShow {
   display: flex;
   position: absolute;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   flex-direction: column;
@@ -183,10 +171,8 @@ nav a {
 }
 
 .hamburgerMenu {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -240,7 +226,6 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   width: 100%;

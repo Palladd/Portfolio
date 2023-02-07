@@ -12,7 +12,7 @@ header {
 
     .heroimg {
         width: 100%;
-        height: 17vh;
+        height: 20vh;
         background-image: url(/images/old-man-my-computer.gif);
         background-position: center;
         background-attachment: fixed;
@@ -68,6 +68,11 @@ header {
             .svgPatronite {
                 background-color: colors.$sec-background;
                 border-radius: 30px;
+                transition: 0.5s;
+            }
+
+            .svgPatronite:hover {
+                background-color: colors.$accent;
             }
         }
     }

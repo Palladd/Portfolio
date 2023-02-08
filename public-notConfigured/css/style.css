@@ -279,20 +279,10 @@ p {
   width: 100%;
   background-color: rgb(0, 0, 0);
   z-index: 9;
-  -webkit-animation: fade 0.5s ease-in-out 2.5s 1 normal forwards;
-          animation: fade 0.5s ease-in-out 2.5s 1 normal forwards;
+  animation: fade 0.5s ease-in-out 2.5s 1 normal forwards;
 }
 .loadPage video {
   width: 50vw;
-}
-@-webkit-keyframes fade {
-  from {
-    opacity: 1;
-    transition: 1s;
-  }
-  to {
-    opacity: 0;
-  }
 }
 @keyframes fade {
   from {
@@ -372,7 +362,6 @@ header .overview {
 header .overview .mediaIcons {
   padding-top: 10px;
   padding-right: 3%;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   display: flex;
@@ -404,7 +393,6 @@ header .overview .patronite .svgPatronite {
   display: flex;
   flex-direction: row;
   width: 85%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin-top: 50px;
@@ -417,7 +405,6 @@ header .overview .patronite .svgPatronite {
   display: flex;
   flex-direction: column;
   width: 85%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -458,7 +445,6 @@ header .overview .patronite .svgPatronite {
   display: flex;
   flex-direction: column;
   width: 85%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin-bottom: 50px;
@@ -482,10 +468,8 @@ header .overview .patronite .svgPatronite {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   z-index: -2;
@@ -571,7 +555,6 @@ header .overview .patronite .svgPatronite {
   flex-direction: column;
   align-items: center;
   width: 85%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -641,7 +624,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   width: 85%;
@@ -1008,6 +990,12 @@ footer .footerContainer .rightFoot {
     height: 70vh;
   }
   .floatingBgDown {
+    height: 70vh;
+  }
+  .about {
+    width: 30%;
+  }
+}/*# sourceMappingURL=style.css.map */ .floatingBgDown {
     height: 70vh;
   }
   .about {
